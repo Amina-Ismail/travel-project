@@ -8,7 +8,7 @@ header {
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 260px;
+  padding: 200px 0;
 }
 header h1 {
   font-size: 96px;
@@ -18,7 +18,7 @@ header h1 {
 }
 header h3 {
   font-size: 24px;
-  font-style: normal;
+  margin: 0;
   font-weight: 900;
   line-height: 1.5;
   letter-spacing: 5px;
@@ -43,6 +43,7 @@ header a {
 }
 main {
   background: white;
+  padding: 60px;
 }
 main h2 {
   font-size: 16px;
@@ -107,7 +108,30 @@ footer a {
 section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+.secondary h2 {
+  opacity: 0.3;
+  color: #272044;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  padding-top: 70px;
+}
+.secondary h3 {
+  color: #272044;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 20px;
+}
+section.secondary {
+  background: #f8f8f8;
 }
 
 .grid {
@@ -125,6 +149,87 @@ section {
 .grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.text-center {
+  text-align: center;
+}
+
+.grid-3-columns-pic {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  background-color: white;
+  box-shadow: 20px 20px 40px 0px rgba(198, 198, 198, 0.2);
+  margin: 30px 0;
+}
+.card h4 {
+  font-size: 24px;
+  color: #272044;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+.card body {
+  padding: 30px;
+}
+.card p {
+  font-size: 16px;
+  color: #272044;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.card-header.grid {
+  grid-gap: 0;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
+.cpt {
+  width: 185px;
+  height: 185px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.btn {
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: #462cb2;
+  color: white;
+}
+
+.primary h2 {
+  color: #272044;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 5px;
+}
+.primary h3 {
+  color: #272044;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 30px;
+}
+
 main img {
   max-width: 100%;
 }
@@ -148,5 +253,33 @@ main img {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+  }
+  .card h4 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px 0;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
+  }
+  .primary h3 {
+    font-size: 30px;
+    line-height: 1.2;
+    padding: 0;
+  }
+  .secondary h3 {
+    font-size: 30px;
+    padding: 0;
+  }
+  .btn {
+    font-size: 12px;
+    margin: 0;
+    letter-spacing: 1;
+    line-height: 1;
+    text-transform: none;
+    padding: 15px 20px;
   }
 }
